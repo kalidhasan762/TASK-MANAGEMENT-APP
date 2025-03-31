@@ -1,0 +1,17 @@
+// Example for storing tasks in localStorage
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function saveTasks() {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+// Example for adding a task
+function addTask(task) {
+  tasks.push(task);
+  saveTasks();
+}
+
+// Example for retrieving tasks
+function getTasks() {
+  return tasks;
+}
