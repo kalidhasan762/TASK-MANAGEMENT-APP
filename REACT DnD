@@ -1,0 +1,13 @@
+// ... (Import React DnD)
+
+function TaskItem({ task, index, moveTask }) {
+  // ... (Use React DnD's useDrag and useDrop hooks to make the item draggable and droppable)
+
+  return (
+    // ... (Render the task item with drag and drop functionality)
+  );
+}
+
+function TaskList({ tasks, moveTask }) {
+  // ... (Map over tasks and render TaskItem components)
+}
